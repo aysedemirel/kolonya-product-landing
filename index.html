@@ -3,8 +3,7 @@
 <head>
 	<meta charset="UTF-8">
 	<title>Kolonya Product Landing Page</title>
-	<script src="https://use.fontawesome.com/de50a042e8.js"></script>
-	<script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+	
 	<link rel="stylesheet" href="./style/style.css">
 </head>
 <body>
@@ -27,13 +26,13 @@
     </header>
     <div class="container">
     		<section id="features">
-    			<div class="grid">
-    				<div class="product-icon">
+    			<div id="detail-info">
+    				<div id="info-icon">
     					<img src="./img/product.jpg">
     				</div>
-    				<div class="desc">
+    				<div class="detail-desc">
     					<p>
-    						How would you like to stroll in a garden decorated with cherry blossoms that offer all the energy of spring? The scent of cherry blossom, which takes the world by storm with its life-giving profile, is enriched with fruity musk and turns into an enchanting fragrance. Get ready to rise and those around you follow this scent!
+    						How would you like to stroll in a garden decorated with cherry blossoms that offer all the energy of spring? <br><br> The scent of cherry blossom, which takes the world by storm with its life-giving profile, is enriched with fruity musk and turns into an enchanting fragrance.<br><br>  Get ready to rise and those around you follow this scent!
     					</p>
     				</div>
     			</div>
@@ -41,7 +40,7 @@
     				<div class="icon">
     					<img src="./img/cherry-blossom.png">
     				</div>
-    				<div class="desc">
+    				<div class="info">
     					<h2>Aura</h2>
     					<p>
     						<strong>Top:</strong> Lemon, Sweet Orange <br>
@@ -54,7 +53,7 @@
     				<div class="icon">
     					<img src="./img/period-after-opening.png">
     				</div>
-    				<div class="desc">
+    				<div class="info">
     					<h2>Lifetime:</h2>
     					<p>
     						12 months after opening the cover
@@ -62,18 +61,30 @@
     				</div>
     			</div>
     		</section>
-    		<section id="#contents">
-    			<div class="icon">
+    		<section id="contents">
+    			<div class="grid">
+    				<div class="icon">
     					<img src="./img/article.png">
+    				</div>
+	    			<div class="info">
+		    			<h2>Contents :</h2>
+		    			<p>Alcohol, Aqua, Parfum, Benzyl Salicylate, Citral, Citronellol, Alpha-Isomethyl Ionone, Hexyl Cinnamal, Limonene, Linalool, CI 16255.</p>
+	    			</div>
     			</div>
-    			<h2>Contents :</h2>
-    			<p>Alcohol, Aqua, Parfum, Benzyl Salicylate, Citral, Citronellol, Alpha-Isomethyl Ionone, Hexyl Cinnamal, Limonene, Linalool, CI 16255.</p>
     		</section>
-    		<section id="#storage-conditions">
-    			<h2>Storage Conditions :</h2>
-    			<p>Keep in a cool place.</p>
+
+    		<section id="storage-conditions">
+    			<div class="grid">
+	    			<div class="icon">
+	    				<img src="./img/thermometer.png">
+	    			</div>
+    				<div class="info">
+		    			<h2>Storage Conditions :</h2>
+		    			<p>Keep in a cool place.</p>
+    				</div>
+    			</div>
     		</section>
-    		<section id="hero">
+    		<section id="mail-box">
     			<h2>To get more info in your mail-box</h2>
     			<form id="form" action="https://www.freecodecamp.com/email-submit">
       			<input
@@ -119,5 +130,6 @@
                 <span>Copyright 2021, Kolonya</span>
             </footer>
     </div>
+    <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
 </body>
 </html>
