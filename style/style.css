@@ -40,7 +40,6 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  color: darkorange;
 }
 
 #info-icon img{
@@ -53,6 +52,7 @@
     margin-bottom: 10px;
     padding: 0rem;
   }
+
 }
 
 @media screen and (max-width: 650px) {
@@ -121,9 +121,104 @@
   margin-right: 20%;
 }
 
+#pricing {
+  margin-top: 60px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.pricing-list{
+  list-style: none;
+  font-family: Kavivanar;
+}
+
+.product ol{
+ padding-inline-start: 0px;
+}
+
+.ok{
+  width:32px;
+  margin-right: 10px;
+}
+
+.level{
+  text-align: center;
+  font-family: Kavivanar;
+}
+
+.price{
+  font-family: Kavivanar;
+  font-size: xxx-large;
+  margin-block-start: 0.5em;
+  margin-block-end: 0.5em;
+}
+
+.product {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: calc(100% / 3);
+  margin: 10px;
+  border: 1px solid #000;
+  border-radius: 3px;
+}
+
+.product > .level {
+  background-color: #254633;
+  color: white;
+  padding: 15px 0;
+  width: 100%;
+  text-transform: uppercase;
+  font-weight: 700;
+}
+
+.product > h2 {
+  margin-top: 15px;
+}
 
 
+.product > ol > li {
+  padding: 5px 0;
+}
 
+.product > button {
+  border: 0;
+  margin: 15px 0;
+  background-color: #254633;
+  color: white;
+  font-weight: 400;
+}
+
+.product > button:hover {
+  background-color: orange;
+  transition: background-color 1s;
+}
+
+@media (max-width: 800px) {
+  #pricing {
+    flex-direction: column;
+  }
+  .product {
+    max-width: 300px;
+    width: 100%;
+    margin: 0 auto;
+    margin-bottom: 10px;
+  }
+}
+
+.btn {
+  padding: 0 20px;
+  height: 40px;
+  font-size: 1em;
+  font-weight: 900;
+  text-transform: uppercase;
+  border: 3px black solid;
+  border-radius: 2px;
+  background: transparent;
+  cursor: pointer;
+  font-family: Kavivanar;
+}
 
 
 
