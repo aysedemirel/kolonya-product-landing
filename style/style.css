@@ -1,5 +1,15 @@
+p, h2{
+  font-family: Kavivanar;
+}
+
+.container{
+  margin-left: 20%;
+  margin-right: 20%;
+}
+
 .header-content{
   text-align: center;
+  background-color: #a7eed4;
 }
 .nav-list{
   display: inline;
@@ -35,7 +45,7 @@
   vertical-align: middle;
   width: 80%;
 }
-
+/***************** INFO TEXT ************************/
 #info-icon{
   display: flex;
   align-items: center;
@@ -52,7 +62,6 @@
     margin-bottom: 10px;
     padding: 0rem;
   }
-
 }
 
 @media screen and (max-width: 650px) {
@@ -116,11 +125,7 @@
   width: 700px;
 }
 
-.container{
-  margin-left: 20%;
-  margin-right: 20%;
-}
-
+/******************** PRICE TABLE ********************/
 #pricing {
   margin-top: 60px;
   display: flex;
@@ -165,8 +170,8 @@
 }
 
 .product > .level {
-  background-color: #254633;
-  color: white;
+  background-color: #a7eed4;
+  color: #058e75;
   padding: 15px 0;
   width: 100%;
   text-transform: uppercase;
@@ -185,8 +190,8 @@
 .product > button {
   border: 0;
   margin: 15px 0;
-  background-color: #254633;
-  color: white;
+  background-color: #a7eed4;
+  color: #058e75;
   font-weight: 400;
 }
 
@@ -206,7 +211,7 @@
     margin-bottom: 10px;
   }
 }
-
+/***************** BUTTON ***********************/
 .btn {
   padding: 0 20px;
   height: 40px;
@@ -219,10 +224,124 @@
   cursor: pointer;
   font-family: Kavivanar;
 }
+/*************** FOOTER *************************/
+.footer-list{
+  display: inline;
+  list-style: none;
+}
 
+.social-links{
+  display: flex;
 
+}
 
+footer {
+  margin-top: 30px;
+  background-color: #00bd9a;
+  padding: 20px;
+  font-family: Kavivanar;
+}
 
+footer > ul {
+  display: flex;
+  justify-content: flex-end;
+}
 
+footer > ul > li {
+  padding: 0 10px;
+}
 
+footer > span {
+  margin-top: 5px;
+  display: flex;
+  justify-content: flex-end;
+  font-size: 0.9em;
+  color: white;
+  margin-right: 10px
+}
 
+.footer .social-links a {
+  margin-top: -0.5rem;
+  padding: 0.2rem 1rem 0 1rem;
+  font-size: 1.5rem;
+  color: white;
+  text-decoration: none;
+}
+
+.footer-link{
+  text-decoration: none;
+  color: white;
+}
+
+.footer .social-links a:hover {
+  color: #fd9842;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.container {
+  max-width: 1000px;
+  width: 100%;
+  margin: 0 auto;
+}
+
+/************* FORM ****************/
+
+.search-form{
+    position: relative;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    transition: all 1s;
+    width: 30px;
+    height: 30px;
+    background: white;
+    box-sizing: border-box;
+    border-radius: 25px;
+    padding: 5px;
+}
+
+.search-input{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;;
+    height: 32.5px;
+    line-height: 30px;
+    outline: 0;
+    border: 0;
+    display: none;
+    font-size: 1em;
+    border-radius: 20px;
+    padding: 0 20px;
+}
+
+.fa{
+    box-sizing: border-box;
+    padding: 3px;
+    position: absolute;
+    right: 0;
+    border-radius: 50%;
+    color: #07051a;
+    text-align: center;
+    font-size: 1em;
+    transition: all 1s;
+}
+
+.search-form:hover{
+    width: 200px;
+    cursor: pointer;
+}
+
+.search-form:hover .search-input{
+    display: block;
+}
+
+.search-form:hover .fa{
+    background: #07051a;
+    color: white;
+}

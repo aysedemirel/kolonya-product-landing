@@ -3,14 +3,17 @@
 <head>
 	<meta charset="UTF-8">
 	<title>Kolonya Product Landing Page</title>
+    <script src="https://use.fontawesome.com/de50a042e8.js"></script>
 	<link href="https://fonts.googleapis.com/css?family=Kavivanar" rel="stylesheet" type="text/css">
 	<link rel="stylesheet" href="./style/style.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous"
+    />
 </head>
 <body>
 	<header class="header-content">
 		<div id="logo">
 			<a class="logo-link" href="./index.html">
-				<img src="./img/logo.png">
+				<img src="./img/logo-transparent.png">
 			</a>
 		</div>
 		<div class="navigation">
@@ -23,6 +26,9 @@
       			</ul>
     		</nav>
     	</div>
+        <div>
+            <br>
+        </div>
     </header>
     <div class="container">
     		<section id="features">
@@ -84,26 +90,11 @@
     				</div>
     			</div>
     		</section>
-    		<section id="mail-box">
-    			<h2>To get more info in your mail-box</h2>
-    			<form id="form" action="https://www.freecodecamp.com/email-submit">
-      			<input
-       				name="email"
-        			id="email"
-        			type="email"
-			        placeholder="Enter your email address"
-			        required
-      			/>
-      			<input id="submit" type="submit" value="Contact" class="btn" />
-    			</form>
-  			</section>
   			<section id="pricing">
   				<div class="product" id="one-liter-kolonya">
 	  				<div class="level">1 l Kolonya</div>
 	        		<ol>
 	            		<li class="pricing-list"><img src="./img/ok.png" class="ok"> Lorem ipsum.</li>
-				        <li class="pricing-list"><img src="./img/ok.png" class="ok"> Lorem ipsum.</li>
-				        <li class="pricing-list"><img src="./img/ok.png" class="ok"> Lorem ipsum dolor.</li>
 				        <li class="pricing-list"><img src="./img/ok.png" class="ok"> Lorem ipsum.</li>
 	        		</ol>
                     <h1 class="price">$10</h1>
@@ -114,20 +105,50 @@
 	        		<ol>
 	            		<li class="pricing-list"><img src="./img/ok.png" class="ok">Lorem ipsum.</li>
 				        <li class="pricing-list"><img src="./img/ok.png" class="ok">Lorem ipsum.</li>
-				        <li class="pricing-list"><img src="./img/ok.png" class="ok">Lorem ipsum dolor.</li>
-				        <li class="pricing-list"><img src="./img/ok.png" class="ok">Lorem ipsum.</li>
 	        		</ol>
                     <h1 class="price">$5</h1>
 	        		<button class="btn">Select</button>
 	        	</div>
   			</section>
-  			<footer>
+            <section id="mail-box">
+                <h2>Contact with us</h2>
+                <form id="form" action="https://www.freecodecamp.com/email-submit">
+                <input
+                    name="email"
+                    id="email"
+                    type="email"
+                    placeholder="Enter your email address"
+                    required
+                />
+                <input id="submit" type="submit" value="Contact" class="btn" />
+                </form>
+            </section>
+  			<footer class="footer">
+                <div class="social-links">
+                    <div>
+                    <a href="https://github.com/aysedemirel/" target="_blank">
+                        <i class="fab fa-github-square" aria-hidden="true"></i>
+                    </a>
+                      </div>
+                    <div>
+                    <a href="https://twitter.com/aysee_demirel/" target="_blank">
+                        <i class="fab fa-twitter-square" aria-hidden="true"></i>
+                    </a>
+                      </div>
+                    <div>
+                        <form class="search-form" action="">
+                            <input class="search-input" type="search">
+                            <i class="fa fa-search"></i>
+                        </form>
+                    </div>
+                </div>
 			    <ul>
-			       <li><a href="#">Privacy</a></li>
-			       <li><a href="#">Terms</a></li>
-			       <li><a href="#">Contact</a></li>
+			       <li class="footer-list"><a class="footer-link" href="#">Privacy</a></li>
+			       <li class="footer-list"><a class="footer-link" href="#">Terms</a></li>
+			       <li class="footer-list"><a class="footer-link" href="#">Contact</a></li>
 			    </ul>
-                <span>Copyright 2021, Kolonya</span>
+                <span>&copy; 2021, Kolonya</span>
+            
             </footer>
     </div>
     <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
