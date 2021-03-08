@@ -6,6 +6,9 @@ h2 {
 .container {
   margin-left: 20%;
   margin-right: 20%;
+  max-width: 1000px;
+  width: 100%;
+  margin: 0 auto;
 }
 
 .header-content {
@@ -58,42 +61,12 @@ h2 {
   width: 400px;
 }
 
-@media screen and (max-width: 675px) {
-  .nav-link {
-    display: inline-block;
-    margin-bottom: 10px;
-    padding: 0rem;
-  }
-}
-
-@media screen and (max-width: 650px) {
-  .nav-link {
-    font-size: 80%;
-  }
-  #info-icon img {
-    width: 300px;
-  }
-}
-@media screen and (max-width: 450px) {
-  #info-icon img {
-    width: 200px;
-  }
-}
-
-@media screen and (max-width: 350px) {
-  #info-icon img {
-    width: 100px;
-  }
-}
-
 .icon {
   width: 64px;
-}
-
-@media print {
-  p {
-    text-decoration: underline;
-  }
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: darkorange;
 }
 
 #detail-info {
@@ -106,17 +79,11 @@ h2 {
 
 .grid {
   display: flex;
+  margin-bottom: 2%;
 }
 
 #features {
   margin-top: 30px;
-}
-
-.icon {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  color: darkorange;
 }
 
 .detail-desc {
@@ -127,13 +94,6 @@ h2 {
   width: 700px;
 }
 
-.grid {
-  margin-bottom: 2%;
-}
-
-.detail-info {
-  margin-bottom: 2%;
-}
 /******************** PRICE TABLE ********************/
 #pricing {
   margin-top: 60px;
@@ -145,10 +105,6 @@ h2 {
 .pricing-list {
   list-style: none;
   font-family: Kavivanar;
-}
-
-.product ol {
-  padding-inline-start: 0px;
 }
 
 .ok {
@@ -176,6 +132,10 @@ h2 {
   margin: 10px;
   border: 1px solid #000;
   border-radius: 3px;
+}
+
+.product ol {
+  padding-inline-start: 0px;
 }
 
 .product > .level {
@@ -208,17 +168,6 @@ h2 {
   transition: background-color 1s;
 }
 
-@media (max-width: 800px) {
-  #pricing {
-    flex-direction: column;
-  }
-  .product {
-    max-width: 300px;
-    width: 100%;
-    margin: 0 auto;
-    margin-bottom: 10px;
-  }
-}
 /***************** BUTTON ***********************/
 .btn {
   padding: 0 20px;
@@ -290,13 +239,7 @@ footer > span {
   box-sizing: border-box;
 }
 
-.container {
-  max-width: 1000px;
-  width: 100%;
-  margin: 0 auto;
-}
-
-/************* FORM ****************/
+/************* FOOTER - FORM ****************/
 
 .search-form {
   position: relative;
@@ -378,16 +321,9 @@ footer > span {
   background-color: #a7eed4;
 }
 
-@media screen and (max-width: 720px) {
-  #email {
-    width: 300px;
-  }
-}
-
-@media screen and (max-width: 600px) {
-  #email {
-    width: 200px;
-  }
+#submit:hover{
+  background-color: orange;
+  transition: background-color 1s;
 }
 
 /**************** TOP BUTTON ******************/
@@ -410,4 +346,63 @@ footer > span {
 
 #myBtn:hover {
   background-color: #d9b3c0;
+}
+
+/***************** MEDIA ************************/
+@media screen and (max-width: 675px) {
+  .nav-link {
+    display: inline-block;
+    margin-bottom: 10px;
+    padding: 0rem;
+  }
+}
+
+@media screen and (max-width: 650px) {
+  .nav-link {
+    font-size: 80%;
+  }
+  #info-icon img {
+    width: 300px;
+  }
+}
+@media screen and (max-width: 450px) {
+  #info-icon img {
+    width: 200px;
+  }
+}
+
+@media screen and (max-width: 350px) {
+  #info-icon img {
+    width: 100px;
+  }
+}
+
+@media print {
+  p {
+    text-decoration: underline;
+  }
+}
+
+@media (max-width: 800px) {
+  #pricing {
+    flex-direction: column;
+  }
+  .product {
+    max-width: 300px;
+    width: 100%;
+    margin: 0 auto;
+    margin-bottom: 10px;
+  }
+}
+
+@media screen and (max-width: 720px) {
+  #email {
+    width: 300px;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  #email {
+    width: 200px;
+  }
 }
