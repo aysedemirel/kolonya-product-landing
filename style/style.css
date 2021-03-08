@@ -1,35 +1,37 @@
-p, h2{
+p,
+h2 {
   font-family: Kavivanar;
 }
 
-.container{
+.container {
   margin-left: 20%;
   margin-right: 20%;
 }
 
-.header-content{
+.header-content {
   text-align: center;
   background-color: #a7eed4;
 }
-.nav-list{
+.nav-list {
   display: inline;
   list-style: none;
 }
-#nav-head{
+#nav-head {
   padding-left: 0px;
 }
 
 .nav-link {
-  position:relative;
-  font-family: 'Open Sans', sans-serif;
-  font-size:100%;
-  text-decoration:none;
+  position: relative;
+  font-family: "Open Sans", sans-serif;
+  font-size: 100%;
+  text-decoration: none;
   border: solid 1px #831212;
 
   -webkit-tap-highlight-color: transparent;
   background-color: #00bd9a;
   border-radius: 5px;
-  box-shadow: rgba(0, 0, 0, 0.14) 0px 2px 2px 0px, rgba(0, 0, 0, 0.12) 0px 1px 5px 0px, rgba(0, 0, 0, 0.2) 0px 3px 1px -2px;
+  box-shadow: rgba(0, 0, 0, 0.14) 0px 2px 2px 0px,
+    rgba(0, 0, 0, 0.12) 0px 1px 5px 0px, rgba(0, 0, 0, 0.2) 0px 3px 1px -2px;
   box-sizing: inherit;
   color: white;
   cursor: pointer;
@@ -46,13 +48,13 @@ p, h2{
   width: 80%;
 }
 /***************** INFO TEXT ************************/
-#info-icon{
+#info-icon {
   display: flex;
   align-items: center;
   justify-content: center;
 }
 
-#info-icon img{
+#info-icon img {
   width: 400px;
 }
 
@@ -68,28 +70,28 @@ p, h2{
   .nav-link {
     font-size: 80%;
   }
-  #info-icon img{
-  width: 300px;
+  #info-icon img {
+    width: 300px;
   }
 }
 @media screen and (max-width: 450px) {
-  #info-icon img{
-  width: 200px;
+  #info-icon img {
+    width: 200px;
   }
 }
 
 @media screen and (max-width: 350px) {
-  #info-icon img{
-  width: 100px;
+  #info-icon img {
+    width: 100px;
   }
 }
 
-.icon{
-  width:64px;
+.icon {
+  width: 64px;
 }
 
 @media print {
-  p{
+  p {
     text-decoration: underline;
   }
 }
@@ -98,7 +100,7 @@ p, h2{
   display: flex;
 }
 
-.info{
+.info {
   font-size: 20px;
 }
 
@@ -117,7 +119,7 @@ p, h2{
   color: darkorange;
 }
 
-.detail-desc{
+.detail-desc {
   text-align: left;
   align-content: center;
   justify-content: center;
@@ -129,7 +131,7 @@ p, h2{
   margin-bottom: 2%;
 }
 
-.detail-info{
+.detail-info {
   margin-bottom: 2%;
 }
 /******************** PRICE TABLE ********************/
@@ -140,26 +142,26 @@ p, h2{
   justify-content: center;
 }
 
-.pricing-list{
+.pricing-list {
   list-style: none;
   font-family: Kavivanar;
 }
 
-.product ol{
- padding-inline-start: 0px;
+.product ol {
+  padding-inline-start: 0px;
 }
 
-.ok{
-  width:32px;
+.ok {
+  width: 32px;
   margin-right: 10px;
 }
 
-.level{
+.level {
   text-align: center;
   font-family: Kavivanar;
 }
 
-.price{
+.price {
   font-family: Kavivanar;
   font-size: xxx-large;
   margin-block-start: 0.5em;
@@ -188,7 +190,6 @@ p, h2{
 .product > h2 {
   margin-top: 15px;
 }
-
 
 .product > ol > li {
   padding: 5px 0;
@@ -232,14 +233,13 @@ p, h2{
   font-family: Kavivanar;
 }
 /*************** FOOTER *************************/
-.footer-list{
+.footer-list {
   display: inline;
   list-style: none;
 }
 
-.social-links{
+.social-links {
   display: flex;
-
 }
 
 footer {
@@ -264,7 +264,7 @@ footer > span {
   justify-content: flex-end;
   font-size: 0.9em;
   color: white;
-  margin-right: 10px
+  margin-right: 10px;
 }
 
 .footer .social-links a {
@@ -275,7 +275,7 @@ footer > span {
   text-decoration: none;
 }
 
-.footer-link{
+.footer-link {
   text-decoration: none;
   color: white;
 }
@@ -298,96 +298,96 @@ footer > span {
 
 /************* FORM ****************/
 
-.search-form{
-    position: relative;
-    top: 40%;
-    left: 50%;
-    transform: translate(-50%,-50%);
-    transition: all 1s;
-    width: 30px;
-    height: 30px;
-    background: white;
-    box-sizing: border-box;
-    border-radius: 25px;
-    padding: 5px;
+.search-form {
+  position: relative;
+  top: 40%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  transition: all 1s;
+  width: 30px;
+  height: 30px;
+  background: white;
+  box-sizing: border-box;
+  border-radius: 25px;
+  padding: 5px;
 }
 
-.search-input{
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;;
-    height: 32.5px;
-    line-height: 30px;
-    outline: 0;
-    border: 0;
-    display: none;
-    font-size: 1em;
-    border-radius: 20px;
-    padding: 0 20px;
+.search-input {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 32.5px;
+  line-height: 30px;
+  outline: 0;
+  border: 0;
+  display: none;
+  font-size: 1em;
+  border-radius: 20px;
+  padding: 0 20px;
 }
 
-.fa{
-    box-sizing: border-box;
-    padding: 3px;
-    position: absolute;
-    right: 0;
-    border-radius: 50%;
-    color: #07051a;
-    text-align: center;
-    font-size: 1em;
-    transition: all 1s;
+.fa {
+  box-sizing: border-box;
+  padding: 3px;
+  position: absolute;
+  right: 0;
+  border-radius: 50%;
+  color: #07051a;
+  text-align: center;
+  font-size: 1em;
+  transition: all 1s;
 }
 
-.search-form:hover{
-    width: 200px;
-    cursor: pointer;
+.search-form:hover {
+  width: 200px;
+  cursor: pointer;
 }
 
-.search-form:hover .search-input{
-    display: block;
+.search-form:hover .search-input {
+  display: block;
 }
 
-.search-form:hover .fa{
-    background: #07051a;
-    color: white;
+.search-form:hover .fa {
+  background: #07051a;
+  color: white;
 }
 
 /**************** MAIL BOX ********************/
-#mail-box{
+#mail-box {
   display: flex;
   margin: 5%;
 }
 
-#form-header{
-   margin-right: 5%;
-   margin-left: 5%;
+#form-header {
+  margin-right: 5%;
+  margin-left: 5%;
 }
 
-#form{
+#form {
   display: flex;
 }
 
-#email{
+#email {
   margin-right: 5%;
   width: 400px;
   height: 40px;
 }
 
-#submit{
-   background-color: #a7eed4;
+#submit {
+  background-color: #a7eed4;
 }
 
 @media screen and (max-width: 720px) {
- #email{
-  width: 300px;
-}
+  #email {
+    width: 300px;
+  }
 }
 
 @media screen and (max-width: 600px) {
- #email{
-  width: 200px;
-}
+  #email {
+    width: 200px;
+  }
 }
 
 /**************** TOP BUTTON ******************/
